@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<title>Калкулатор на проценти</title>
+<meta name="description" content="Удобен калкулатор на проценти с теоритично описание за изчисляване." />
+<meta name="keywords" content="проценти, процент, калкулатор на проценти, изчисляване на проценти, калкулатор" />
+<!--<link href="./site.css" rel="stylesheet" type="text/css"/>-->
+<style type="text/css">
+	body
+	{
+		padding: 0 88px 88px 88px;
+		background-color: #000000;
+		color: #CCCCCC;
+		text-align: center;
+	}
+	input 
+	{
+		width: 30px;
+	}
+	table{
+		margin: 30px auto;
+		border: 1px solid #FF9966;
+	}
+	#errmsg
+	{
+		text-align: center;
+	}
+	div 
+	{
+		text-align: center;
+	}
+	div.text
+	{
+		text-align: justify;
+		font-weight: bold;
+	}
+</style>
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="site.js"></script>
+</head>
+<body>
+<table align="center" style="border: 0;">
+<tr>
+	<td>
+    		<script type="text/javascript"><!--
+google_ad_client = "pub-8195953845041776";
+/* DamnameneusSite */
+google_ad_slot = "7944927572";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+    </td>
+    <td rowspan="4" style="width: 160px;">
+    	<script type="text/javascript"><!--
+google_ad_client = "pub-8195953845041776";
+/* 160x600, създаден 09-3-28 */
+google_ad_slot = "2338445240";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+    </td>
+</tr>
+<tr>
+	<td  style="width: 552px !important;">
+			<div class="text">
+		Направих този малък сайт/калкулатор
+			за да отговоря на често срещания въпрос, който е
+		   "Как да изчислим процент от нещо?".
+	</div>
+	</td>
+</tr>
+<tr>
+<td>
+<table>
+	<tr>
+		<td colspan="3" id="errmsg">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Колко е 
+			<input type="text" class="percent" id="percent1" onkeypress="return _onlyNumbers(event);"/>
+			%
+			от 
+			<input type="text" class="amount" id="amount1" onkeypress="return _onlyNumbers(event);"/>
+			?
+		</td>
+		<td>
+			<button type="button" class="calc1" onclick="calc1();">Изчисли</button>
+		</td>
+		<td>
+			Отговор:
+			<input type="text" class="answer" id="answer1"/>
+		</td>
+	</tr>	
+	<tr>
+		<td>
+			<input type="text" class="percent" id="percent2" onkeypress="return _onlyNumbers(event);"/>
+			колко процента е от
+			<input type="text" class="amount" id="amount2" onkeypress="return _onlyNumbers(event);"/>
+			?
+		</td>
+		<td>
+			<button type="button" class="calc2" onclick="calc2();">Изчисли</button>
+		</td>
+		<td>
+			Отговор:
+			<input type="text" class="answer" id="answer2"/>%
+		</td>
+	</tr>	
+	<tr>
+		<td>
+			<input type="text" class="percent" id="percent3" onkeypress="return _onlyNumbers(event);"/>
+			e
+			<input type="text" class="amount" id="amount3" onkeypress="return _onlyNumbers(event);"/>
+			% от колко? 
+		</td>
+		<td>
+			<button type="button" class="calc3" onclick="calc3();">Изчисли</button>
+		</td>
+		<td>
+			Отговор:
+			<input type="text" class="answer" id="answer3"/>%
+		</td>
+	</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="white-space: normal;">
+<div class="text">
+	 Главното нещо, което трябва да се запомни, когато се изчисляват проценти е, че
+	 символът за процент може да бъде третиран като "числото разделено на 100". 
+	 Например 35% от 300 може да бъде написано като (35/100) x 300 = 105.
+	 <div class="text">
+		Примери:
+			<br/>
+			<br/>
+			<hr/>
+			<ol>
+				<li>
+					Колко е 200% от 30?
+					<br/>
+						Отговор: 200% x 30 = (200/100) x 30 = 60
+				</li>
+				<li>
+					Колко е 13% от 98?
+					<br/>
+						Отговор: 13% x 98 = (13/100) x 98 = 12.74
+				</li>
+				<li>
+					60% от всички студенти в университета са мъже. 
+					Има 2400 студента. Колко студента има в университета?
+					<br/>
+						Отговор: 400 = 60% ? X, Следователно X = (2400 / (60 / 100)) = 4000.
+				</li>
+			</ol>
+	 </div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
